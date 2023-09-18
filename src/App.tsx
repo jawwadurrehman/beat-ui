@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import { AccordionDemo } from "./componentsDemo";
 
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+    <div style={{padding:20}}>
+      <AccordionDemo />
+    </div>
+  );
+};
 
-export default App
+export default App;
