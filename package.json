@@ -1,10 +1,20 @@
 {
   "name": "beat-ui",
   "version": "1.0.1",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "private": true,
+  "license": "MIT",
   "scripts": {
-    "build":"tsc"
+    "build": "npm run build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jawwadurrehman/beat-ui.git"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
