@@ -1,6 +1,6 @@
 # Installation
 ```
-npm i beat-ui
+npm i beat-ui tailwindcss tailwindcss-animate
 ```
 
 ## Tailwind Config
