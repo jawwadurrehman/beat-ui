@@ -1,3 +1,8 @@
+# Installation
+```
+npm i beat-ui
+```
+
 ## Tailwind Config
 
 ```
@@ -81,6 +86,7 @@ module.exports = {
 
 ## Index.css code
 
+```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -157,3 +163,5 @@ module.exports = {
     @apply bg-background text-foreground;
   }
 }
+
+```
