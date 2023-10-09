@@ -1,5 +1,5 @@
 {
-  "name": "beat-ui",
+  "name": "@jawwadurrehman/beatui",
   "version": "1.0.1",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -11,9 +11,14 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "prepare": "npm run build"
   },
+  "files": [
+    "source",
+    "dist/cjs/main.js",
+    "dist/es/main.js"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jawwadurrehman/beat-ui.git"
+    "url": "git+https://github.com/jawwadurrehman/beatui.git"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
